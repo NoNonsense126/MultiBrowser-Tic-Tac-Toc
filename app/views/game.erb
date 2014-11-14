@@ -1,0 +1,25 @@
+<div class="container">
+	<div class ="row">
+		<div class="col-md-3">
+			<h2>Player 1 </h2>
+			<p><%= @game.player_1.username %></p>
+		</div>
+	  <canvas id="myCanvas", width="420", height="420">
+	    Your browser does not support the HTML5 canvas tag.
+	  </canvas>
+	  <div class="col-md-3">
+			<h2>Player 2 </h2>
+			<p id="player2-name"></p>
+		</div>
+	</div>
+	<div>
+		<h3 id="starter"></h3>
+	</div>
+	<div>
+		<h1 id="victory-message"></h1>
+	</div>
+</div>
+
+<script> 
+var gameId = "<%= @params[:id] %>"</script>
+<script src="/js/application.js"></script>

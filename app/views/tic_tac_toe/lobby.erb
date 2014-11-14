@@ -1,0 +1,45 @@
+<div class="container">
+	<div class="row lobby-room">
+		<div class="left-column col-8">
+			<div class="rules col-10">
+				<h2>Rules</h2>
+				<ul>
+						<li>X moves first.</li>
+						<li>A piece may be placed on any empty space.</li>
+						<li>A player wins by being the first to connect a line of friendly pieces from one side or corner of the board to the other.</li>
+						<li>The game ends when either one player wins or it is no longer possible for a player to win (in which case the result is a draw).</li>
+				</ul>
+			</div>
+			<div class="row">
+				<div class="btn btn-default new-game">
+					<a href="/games/new">Create a new game</a>
+				</div>
+			</div>
+		</div>
+			<div class="right-column col-4">
+				<div>
+					<h2> Join a game </h2>
+					<div>
+						<% @games.each do |game| %>
+							<a href="/games/<%= game.id %>">
+								<p> <%= game.player_1.username %>
+								</p>
+							</a>
+						<% end %>
+					</div>
+				</div>
+				<div>
+					<h2> Your games </h2>
+					<div>
+						<% @user_games.each do |game| %>
+							<a href="/games/<%= game.id %>">
+								<p> <%= game.player_1.username %> vs <%= game.player_2.try(:username) %>
+								</p>
+							</a>
+						<% end %>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,99 @@
+<body><div id="preload_images"></div>
+
+
+<input type="hidden" id="dest_uri" value="/">
+
+<img class="background-image" src="/images/login-whisp.png">
+<div id="login-wrapper" style="opacity: 1; visibility: visible;">
+    <div id="notify">
+        <div id="login-status" class="error-notice" style="visibility: hidden">
+            <span class="login-status-icon"></span>
+            <div id="login-status-message">You have logged out.</div>
+        </div>
+    </div>
+
+
+
+    <div id="content-container">
+        <div id="login-container">
+            <div id="login-sub-container">
+                <div id="login-sub-header">
+                	<h2> NoNonsense Games </h2>
+                </div>
+                <div id="login-sub">
+                    <div id="forms">                        
+                        <form id="login_form" action="/login" method="post" target="_top">
+                            <div class="input-req-login"><label for="user">Username</label></div>
+                            <div class="input-field-login icon ">
+                                <input name="username" id="user" autofocus="autofocus" value="" placeholder="Enter your username." class="std_textbox" type="text" tabindex="1" required="">
+                            </div>
+                            <div style="margin-top:30px;" class="input-req-login"><label for="pass">Password</label></div>
+                            <div class="input-field-login icon">
+                                <input name="password" id="pass" placeholder="Enter your account password." class="std_textbox" type="password" tabindex="2" required="">
+                            </div>
+                            <div class="controls" >
+                                <div class="login-btn">
+                                    <button name="signup" type="submit" id="login_submit" tabindex="3" style="float:right">Log In</button>
+                                </div>
+
+                                                            </div>
+                            <div class="clear" id="push"></div>
+                        </form>
+
+                    <!--CLOSE forms -->
+                    </div>
+
+                <!--CLOSE login-sub -->
+                </div>
+            <!--CLOSE login-sub-container -->
+            </div>
+        <!--CLOSE login-container -->
+        </div>
+
+    </div>
+<!--Close login-wrapper -->
+		<div id="content-container">
+        <div id="login-container">
+            <div id="login-sub-container">
+                <div id="login-sub-header">
+                	<h2> Sign Up </h2>
+                </div>
+                <div id="login-sub">
+                    <div id="forms">                        
+                        <form id="signup_form" action="/signup" method="post" target="_top">
+                            <div class="input-req-login"><label for="user">Username</label></div>
+                            <div class="input-field-login icon ">
+                                <input name="username" id="user" autofocus="autofocus" value="" placeholder="Enter your username." class="std_textbox" type="text" tabindex="1" required="">
+                            </div>
+                            <div style="margin-top:30px;" class="input-req-login"><label for="pass">Password</label></div>
+                            <div class="input-field-login icon">
+                                <input name="password" id="pass" placeholder="Enter your account password." class="std_textbox" type="password" tabindex="2" required="">
+                            </div>
+                            <div class="controls" >
+                                <div class="login-btn">
+                                    <button name="signup" type="submit" id="login_submit" tabindex="3" style="float:right">Sign up</button>
+                                </div>
+
+                                                            </div>
+                            <div class="clear" id="push"></div>
+                        </form>
+
+                    <!--CLOSE forms -->
+                    </div>
+
+                <!--CLOSE login-sub -->
+                </div>
+            <!--CLOSE login-sub-container -->
+            </div>
+        <!--CLOSE login-container -->
+        </div>
+
+    </div>
+</div>
+
+    <div class="copyright">Copyright©&nbsp;2014 NoNonsense, Inc.</div>
+
+
+
+
+</body>
