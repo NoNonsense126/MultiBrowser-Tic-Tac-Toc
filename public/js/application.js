@@ -157,8 +157,8 @@ $(document).ready(function() {
 				dataType: "json"
 			});
 		request.done(function(response) {
-			$('#myCanvas').css("pointer-events", "auto")
 			turn = false
+			$('#myCanvas').css("pointer-events", "auto")			
 		})
 	}
 

@@ -24,6 +24,15 @@ get '/games/:id/full' do
 
 end
 
+get '/games/:id/join' do
+	game = current_game
+	if current_game.player2_id.nil? && current_user.id != current_game.player_1.id
+		game.update(player2_id: current_user.id)
+		game.save
+	end
+	redirect "/games/#{params[:id]}"
+end
+
 get '/games/:id/state' do
 	game = current_game
 	values = {}
